@@ -1,0 +1,15 @@
+html
+  head
+    title Kullanıcılar
+    style
+      include ../style.css
+
+body
+  .user-container
+    .user-card
+      h3 #{data.name}
+      img(src=`${data.avatar_url}`, alt="avatar")
+      h4 #{data.location}
+      h4 followers: #{data.followers}
+      h4 created at: #{data.created_at}
+      p #{info}

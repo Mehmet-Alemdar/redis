@@ -1,0 +1,74 @@
+/* Stil dosyası style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff6e9;
+  margin: 0;
+  padding: 0;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+}
+
+.user-card img {
+  border-radius: 50%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.user-card h3,
+.user-card h4 {
+  margin: 0;
+}
+
+.user-card h4 {
+  margin-top: 5px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.user-card h4::before {
+  content: '\2022'; /* Yıldız sembolü */
+  color: #555;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.user-card h4.followers::before {
+  content: 'Followers: ';
+}
+
+.user-card h4.created-at::before {
+  content: 'Created at: ';
+}
+
+.user-card p {
+  margin: 0;
+  margin-top: 10px;
+  color: #555;
+  background-color: #fff6e9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d1d1;
+}
